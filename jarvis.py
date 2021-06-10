@@ -126,7 +126,7 @@ if __name__ == "__main__":
         elif 'open stack overflow' in query:
             webbrowser.get(chrome_path).open("stackoverflow.com")
 
-        elif 'the time' in query:
+        elif 'time' in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")
             speak(f"Sir, the time is {strTime}")
 
@@ -215,6 +215,10 @@ if __name__ == "__main__":
                 f"sir at this time we have {up} upload speed and {dl} download speed, note that: intiger before point is the most important")
             print(
                 f"sir at this time we have {up} upload speed and {dl} download speed, note that: intiger before point is the most important")
+
+        elif 'bye' in query:
+            print("Bye Sir! You can say quit to exit the program")
+            speak("Bye Sir! You can say quit to exit the program")
 
         elif 'quit' in query:
             print("Bye Sir! Thank you for your time")
