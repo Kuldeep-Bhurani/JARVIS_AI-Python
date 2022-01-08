@@ -135,8 +135,28 @@ if __name__ == "__main__":
             speak(f"Sir, the date is {strDate}")
 
         elif 'open code' in query:
-            codePath = "C:\\Users\\DELL\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+            codePath = "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(codePath)
+
+        elif 'open steam' in query:
+            steamPath = "C:\\Program Files (x86)\\Steam\\steam.exe"
+            os.startfile(steamPath)
+
+        elif 'open discord' in query:
+            discordPath = "C:\\Users\\Admin\AppData\\Local\\Discord\\Update.exe --processStart Discord.exe"
+            os.startfile(discordPath)
+
+        elif 'open audacity' in query:
+            audacityPath = "C:\\Program Files\\Audacity\\Audacity.exe"
+            os.startfile(audacityPath)
+
+        elif 'open epic' in query:
+            epicPath = "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Binaries\\Win32\\EpicGamesLauncher.exe"
+            os.startfile(epicPath)
+
+        elif 'open chrome' in query:
+            chromePath = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+            os.startfile(chromePath)
 
         elif "who are you" in query:
             speak("I am your personal desktop assistant Jarvis, sir")
